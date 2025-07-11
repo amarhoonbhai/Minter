@@ -16,11 +16,8 @@ async def post_sticker_with_caption(image_path, gift_name):
 
 async def post_gift_details(gift_info):
     text = (
-        "🎉 *A new gift has been added!*
-
-"
-        f"Released by: @{gift_info.get('releasedBy', 'unknown')}
-"
+        "🎉 *A new gift has been added!*\n\n"
+        f"Released by: @{gift_info.get('releasedBy', 'unknown')}\n"
         f"Price: {gift_info.get('price', 'unknown')} ⭐\n"
         f"Limit: {gift_info.get('limit', 'unknown')}\n"
         f"Upgrade: {gift_info.get('upgrade', 'unavailable')}"
